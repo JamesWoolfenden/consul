@@ -26,7 +26,7 @@ ENCRYPT=$2
 PRIVATE_IP1=$3
 PRIVATE_IP2=$4
 
-sed -i -- "s/__NODE_NAME__/$HOSTNAME/g" /root/consul/config.json
-sed -i -- "s/__ENCRYPT__/$ENCRYPT/g" /root/consul/config.json
-sed -i -- "s/__BOOTSTRAP_PRIVATE_IP__/$PRIVATE_IP1/g" /root/consul/config.json
-sed -i -- "s/__NON_BOOTSTRAP_PRIVATE_IP__/$PRIVATE_IP2/g" /root/consul/config.json
+sed -i -- "s/__NODE_NAME__/$HOSTNAME/g" /consul/config.json
+sed -i -- "s/__ENCRYPT__/$ENCRYPT/g" /consul/config.json
+sed -i -- "s/__BOOTSTRAP_PRIVATE_IP__/$PRIVATE_IP1/g" /consul/config.json
+sed -i -- "s/__NON_BOOTSTRAP_PRIVATE_IP__/$PRIVATE_IP2/g" /consul/config.json
